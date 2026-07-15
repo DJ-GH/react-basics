@@ -1,0 +1,49 @@
+.panel-main {
+    width: 100%;
+    height: calc(90vh - 100px);
+    display: flex;
+    justify-content: center;
+}
+.newsContainer {
+    margin-top: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 100px;
+    border-radius: 1.5rem ;
+    width: 0%;
+    height: 0px;
+    background-color: #581776;
+    color: rgb(205, 205, 205);
+    padding: 20px;
+    opacity: 0.5;
+    box-shadow: 0 0 35px 15px #4b026c;
+    animation: fadeIn 1s forwards, heightShow 1.5s forwards 0.6s , widthShow 1s forwards;
+    overflow-y: auto;
+    overflow-x:hidden;
+
+}
+.newContainer {
+    text-align: left;
+    border-left: 3px solid;
+    width: 100%;
+    height: max-content;
+    opacity: 0;
+    animation: textShow 0.5s forwards 2.2s;
+    margin-bottom: 20px;
+
+}
+.newTitle,  .newDescription {
+    margin: 0;
+    padding: 0 10px;
+    color: rgb(185, 185, 185);
+    transition: color 1s
+}
+
+a { text-decoration: none }
+
+.newTitle:hover ,  .newDescription:hover {
+    color: white;
+    transition: color 1s;
+}

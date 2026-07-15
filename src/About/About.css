@@ -1,0 +1,49 @@
+.about-main {
+    display: flex;
+    justify-content: center;
+}
+
+.about-container {
+    border-radius: 1.5rem;
+    width: 0%;
+    height: 0px;
+    background-color: #581776;
+    color: rgb(205, 205, 205);
+    padding: 20px;
+    display: flex;
+    text-align: left;
+    opacity: 0.5;
+    margin-top: 10px;
+    box-shadow: 0 0 35px 15px #4b026c;
+    animation: fadeIn 1s forwards, heightShow 1.5s forwards 0.6s , widthShow 1s forwards;
+}
+
+.about-txt {
+    opacity: 0;
+    animation: textShow 0.5s forwards 2.2s;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes heightShow {
+    to {
+        height: calc(90vh - 170px);
+    }
+}
+
+@keyframes widthShow {
+    to {
+        width: 80%;
+    }
+}
+
+@keyframes textShow {
+    to {
+        opacity: 1;
+        transform: translateY(15px);
+    }
+}

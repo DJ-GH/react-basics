@@ -1,0 +1,39 @@
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.Container {
+
+    border-radius: 1.5rem;
+    width: 80%;
+    height: calc(80vh - 100px);
+    background-color: #581776;
+    color: rgb(205, 205, 205);
+    padding: 20px;
+    text-align: left;
+    margin-top: 10px;
+    box-shadow: 0 0 35px 15px #4b026c;
+    animation: fadeIn 2s;
+
+}
+
+.title {
+    animation: fadeIn 2s;
+    font-size: larger;
+}
+
+.description {
+    animation: fadeIn 2s;
+    font-size: medium;
+    overflow-y: auto;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
